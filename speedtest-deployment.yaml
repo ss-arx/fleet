@@ -37,7 +37,7 @@ spec:
             - containerPort: 3001
           resources:
             limits:
-              memory: "512Mi'
+              memory: "512Mi"
               cpu: "2000m"
       restartPolicy: Always
 status: {}
