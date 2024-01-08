@@ -26,11 +26,11 @@ spec:
       containers:
         - env:
             - name: DOMAIN_NAME
-              value: speedtest.yourdomain.com
+              value: speedtest.statesteel.loc
             - name: ENABLE_LETSENCRYPT
-              value: "True"
+              value: "False"
             - name: USER_EMAIL
-              value: you@yourdomain.com
+              value: arx@statesteel.com
           image: openspeedtest/latest
           name: openspeedtest
           ports:
