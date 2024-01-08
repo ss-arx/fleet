@@ -8,6 +8,7 @@ metadata:
   labels:
     io.kompose.service: speedtest
   name: speedtest
+  namespace: speedtest
 spec:
   type: NodePort
   ports:
