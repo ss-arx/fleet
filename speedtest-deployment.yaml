@@ -24,18 +24,14 @@ spec:
         io.kompose.service: speedtest
     spec:
       containers:
-        - env:
-            - name: DOMAIN_NAME
-              value: speedtest.statesteel.loc
-            - name: ENABLE_LETSENCRYPT
-              value: "False"
-            - name: USER_EMAIL
-              value: arx@statesteel.com
-          image: openspeedtest/latest
+          image: openspeedtest/latest:latest
           name: openspeedtest
           ports:
             - containerPort: 3000
             - containerPort: 3001
-          resources: {}
+          resources:
+            limits:
+              memory: "512Mi'
+              cpu: "1000m"
       restartPolicy: Always
 status: {}
