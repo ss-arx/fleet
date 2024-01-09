@@ -24,7 +24,7 @@ spec:
         io.kompose.service: speedtest
     spec:
       containers:
-        - image: openspeedtest/latest
+        - image: openspeedtest/latest:latest
           name: openspeedtest
           ports:
             - containerPort: 3000
