@@ -24,10 +24,11 @@ spec:
         io.kompose.service: speedtest
     spec:
       containers:
-          image: openspeedtest/latest:latest
+        - image: openspeedtest/latest
           name: openspeedtest
           ports:
             - containerPort: 3000
             - containerPort: 3001
+          resources: {}
       restartPolicy: Always
 status: {}
