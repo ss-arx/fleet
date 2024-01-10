@@ -6,8 +6,8 @@ services:
     restart: always
     environment:
       MODE: standalone
-      #TITLE: "LibreSpeed"
-      #TELEMETRY: "false"
+      TITLE: "LibreSpeed"
+      TELEMETRY: "false"
       #ENABLE_ID_OBFUSCATION: "false"
       #REDACT_IP_ADDRESSES: "false"
       #PASSWORD:
